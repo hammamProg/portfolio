@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hammam Abo Jamous</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- <link rel="stylesheet" href="debug.css"> -->
+
+    <style>
+        
+        
+    </style>
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <section class="section navy-background">
+        <div class="container">
+            <div class="columns is-vcentered ">
+  
+                <div class="column has-text-centered">
+                    <figure>
+                        <img src="./images/avatar.png" alt="Hammam Abo Jamous Avatar" class="portfolio-image">
+                        
+                        <h1 style="color: white;">
+                            <a href="" style="font-size: 100px;" class="typewrite" data-period="2000" data-type='[ "Hi, Im Hammam Abo Jamous.", "I am a Backend Developer.", "I Also Love Design.", "I Love to Develop." ]'>
+                              <span class="wrap"></span>
+                            </a>
+                        </h1>
+
+                    </figure>
+                </div>
+
+            </div>
+
+            <div class="has-text-centered">
+                <a href="https://github.com/hammamProg"><img src="images/github.png" alt="github Image" class="profile-image"></a>
+                <a href="https://www.linkedin.com/in/hammam-khaled-8956a5198/"><img src="images/linkedin.png" alt="linkedin Image" class="profile-image"></a>
+            </div>
+        </div>
+    
+    </section>
+
+    <script>
+        function generateStars(numberOfStars, maxWidth, maxHeight) {
+            let stars = "";
+            for (let i = 0; i < numberOfStars; i++) {
+                // Generate random x and y positions
+                const x = Math.round(Math.random() * maxWidth);
+                const y = Math.round(Math.random() * maxHeight);
+                // Append the new star position to the 'stars' string
+                stars += `${x}px ${y}px #FFF, `;
+            }
+            // Remove the trailing comma and space from the last star entry
+            stars = stars.slice(0, -2);
+            return stars;
+        }   
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const stars1 = generateStars(1000, 3000, 3000);
+            const stars2 = generateStars(150, 3000, 3000);
+            const stars3 = generateStars(200, 3000, 3000);
+
+            document.querySelector('.stars').style.boxShadow = stars1;
+            document.querySelector('.stars2').style.boxShadow = stars2;
+            document.querySelector('.stars3').style.boxShadow = stars3;
+        });
+    </script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

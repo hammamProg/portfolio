@@ -1,0 +1,90 @@
+body{
+    overflow: hidden;
+}
+* { 
+    color:#fff;
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Protest Revolution', sans-serif;
+}
+  
+
+.navy-background {
+    background-color: #1F2544; /* Define navy color */
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.portfolio-image {
+    width: 200px; /* Set image width */
+    height: 200px; /* Set image height */
+    object-fit: cover; /* Ensure the image covers the area without losing its aspect ratio */
+    padding: 10px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area */
+    box-shadow: 0 0 200px 5px rgba(255, 165, 0, 0.75); /* Orange glow */
+
+}
+
+.profile-image {
+    width: 70px; /* Adjust based on your image's size */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area */
+    padding: 10px;
+}
+
+.profile-image:hover{
+    cursor: pointer;
+}
+
+
+
+
+  .stars, .stars2, .stars3 {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 
+        1000px 500px #FFF,   /* Star 1 */
+        1500px 1000px #FFF,  /* Star 2 */
+        250px 800px #FFF,    /* Star 3 */
+        750px 1200px #FFF,   /* Star 4 */
+        1900px 600px #FFF,   /* Star 5 */
+        2300px 300px #FFF,   /* Star 6 */
+        /* Add as many stars as you like */
+        3000px 1000px #FFF; 
+    animation: moveStars 50s linear infinite;
+}
+
+.stars2 {
+    animation: moveStars 100s linear infinite;
+}
+
+.stars3 {
+    animation: moveStars 150s linear infinite;
+}
+
+@keyframes moveStars {
+    from {
+        transform: translateX(0px);
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateX(-10000px);
+        transform: translateY(-10000px);
+
+    }
+}
+
+/* Example star generation (you can generate more) */
+.stars {
+    box-shadow: 1000px 1000px #FFF, 2000px 2000px #FFF, /* more stars */;
+}
+.stars2 {
+    box-shadow: 500px 500px #FFF, 1500px 1500px #FFF, /* more stars */;
+}
+.stars3 {
+    box-shadow: 250px 250px #FFF, 1250px 1250px #FFF, /* more stars */;
+}
