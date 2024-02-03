@@ -22,6 +22,7 @@ body{
     height: 200px; /* Set image height */
     object-fit: cover; /* Ensure the image covers the area without losing its aspect ratio */
     padding: 10px;
+    background-color: white;
     border-radius: 50%; /* Makes the image round */
     object-fit: cover; /* Ensures the image covers the area */
     box-shadow: 0 0 200px 5px rgba(255, 165, 0, 0.75); /* Orange glow */
